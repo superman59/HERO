@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HERO</title>
+<link rel="stylesheet" type="text/css" href="css/my.css">
+<link rel="stylesheet" type="text/css" href="css/aside.css" />
+ <link rel="stylesheet" type="text/css" href="css/btn1.css">
+</head>
+<body>
+<form >
+
+<img src="pictures/timg.jpg" id="a" />
+<input type="checkbox" id="sideToggle"/>
+<aside id="aside">
+	<img src="pictures/super.jpg" id="img"><br>
+	<ul>
+    <a href="index.html"><li onmouseover="this.style.backgroundColor='#666'" onmouseout="this.style.backgroundColor='#333'">Hero</li></a>
+    <a href="#"><li onmouseover="this.style.backgroundColor='#666'" onmouseout="this.style.backgroundColor='#333'">About</li></a>
+    <a href="公司.html"><li onmouseover="this.style.backgroundColor='#666'" onmouseout="this.style.backgroundColor='#333'">Comics</li></a> 
+    <a href="列表.html"><li onmouseover="this.style.backgroundColor='#666'" onmouseout="this.style.backgroundColor='#333'">Company</li></a>	
+    	
+    </ul>
+</aside>
+<div id="wrap">
+	<label id="sideMenuControl" for="sideToggle">
+        <canvas id="canvas" width="100%" height="100"></canvas>
+        <script>
+            var canvas = document.querySelector("#canvas"), image = new Image();
+            var context = canvas.getContext("2d");
+    
+            image.onload = function() 
+            {
+                var pattern = context.createPattern(image, "no-repeat");
+                context.arc(50, 50, 50, 0, 2 * Math.PI);
+                context.fillStyle = pattern;
+                context.fill();    
+            };
+            image.src = "pictures/super1.jpg";
+        </script>
+	</label>
+</div>
+
+<div style="margin-left:15%; margin-right:15%; float:left;">
+	<div id="div1">
+			<div align="center">
+            	<div style="background-color:#666">
+                	<input type="button" id="button1" onclick="button()" value="Click it up ▼" />
+                </div>
+                	
+				<h1 style="color:#FFF">HERO</h1>
+                <h2 class="bevel">这个世界需要英雄</h2>
+                <table id="table" style="border-radius:10px 10px 10px 10px;">
+                	<tr>
+                    	<th><h5>email:</h5><th>
+                    	<th><input type="email" id="password"></th>
+                     </tr>
+                    <tr>
+                    	<th><h5>password:</h5><th>
+                    	<th><input type="password" name="pw" id="pw1" required oninvalid="setCustomValidity('请输入密码')" oninput=" setCustomValidity('');">
+                        </th>
+                    <tr>
+                    	<th height="10"><h5>again:<h5><th>
+                    	<th><input type="password" required oninvalid="setCustomValidity('请输入密码')" oninput="setCustomValidity('')"name="pw" id="pw2" onkeyup="validate()"/>
+                        <span id="tishi"></span></th>
+                    </tr>
+				<script>
+               
+                </script>
+                </table>
+				<input type="submit" id="submit" value="Registration/Login">
+                <script>
+				 function validate() {
+                	var pw1 = document.getElemen.tById("pw1").value;
+               	 	var pw2 = document.getElementById("pw2").value;
+                	if(pw1 == pw2) {
+               	 	document.getElementById("tishi").innerHTML="<font color='green'>√</font>";
+                	document.getElementById("submit").disabled = false;
+                }
+                else {
+                document.getElementById("tishi").innerHTML="<font color='red'>密码不相同</font>";
+                document.getElementById("submit").disabled = true;
+                }
+                }
+					document.forms[0].target="if";
+					function button()
+					{
+						document.forms[0].target="if";
+						var x=document.getElementById("div1");
+						x.id="div1-1";
+						var y = document.getElementById("last");
+						y.id="last-1";
+					}
+					
+				</script>
+		</div>
+  </div>
+  </form>
+  <iframe id="if" name="if" src="about:blank" style="display:none"></iframe>
+	<div id="last">
+		<div id="last1">
+        	<!--<div id="last2">
+           <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=3&id=12012121&auto=1&height=66"></iframe>
+           </div>!-->
+            	<h1>DC</h1>
+                <img src="pictures\dc.jpg" id="img-last">
+                <p>DC漫画公司（DC Comics, Inc.）是美国与漫威漫画公司（Marvel Comics）齐名的漫画巨头，它创建于1934年。1938年6月，公司在《动作漫画》创刊号上创造出世界上第一位超级英雄——超人，从此改写了美国漫画史。1939年5月，公司在《侦探漫画》第27期上创造出世界上第一位没有超能力的超级英雄——蝙蝠侠。自此超人和蝙蝠侠作为DC的招牌角色，各自拥有自己的连载漫画，也开始了长期搭档，被称为“世界最佳拍档”。1967年公司正式定名为DC漫画并沿用至今。1969年DC被时代华纳集团收购，目前是华纳兄弟的子公司。旗下拥有超人、蝙蝠侠、神奇女侠、闪电侠、绿灯侠、海王、钢骨、神奇队长、绿箭侠、火风暴、火星猎人、康斯坦丁等超级英雄，和正义联盟、美国正义协会、少年泰坦、超级英雄军团、黑暗正义联盟、自杀小队等超级英雄团队。</p><br /><br /><br /><br />
+                <h1>Marvel</h1>
+                <img src="pictures\ma.jpg" id="img-last">
+                <p>漫威漫画公司（Marvel Comics）是美国与DC漫画公司（Detective Comics）齐名的漫画巨头，它创建于1939年，于1961年正式定名为Marvel，旧译为“惊奇漫画”，曾用名“时代漫画”（Timely Comics）、亚特拉斯漫画（Atlas Comics）。旗下拥有蜘蛛侠、钢铁侠、美国队长、雷神托尔、绿巨人、黑寡妇、金刚狼、蚁人、黑豹、奇异博士、惊奇队长、超胆侠、杰茜卡·琼斯、卢克·凯奇、铁拳、惩罚者、恶灵骑士等超级英雄和复仇者联盟、X战警、神奇四侠、银河护卫队、捍卫者联盟、光照会等超级英雄团队。</p><br /><br /><br /><br />
+                <h1>one</h1>
+                <img src="pictures\one.jpg" id="img-last">
+                <p>日本漫画家，性别男，1986年10月29日生，出生于新泻县，埼玉县鸿巣市人，代表作：《一拳超人》、《灵能百分百》等。</p>
+                <P>大学时代开始在个人网站上公开了Web漫画，曾经连载于新都社，后来移至个人网站继续连载。于网络连载的漫画《一拳超人》（又译为《一击男》），由于2012年9月2日的NHK节目「网络发源的漫画革命」而导致人气大增，现已有超过1000万阅览量。据其本人称本来是为练习ComicStudio而创作，但是连载将近100话，似乎画工没有令人惊喜的蜕变。</P>
+                <br><br><br><br>
+		</div>
+	</div>
+</div>
+</div> 	
+</body>
+</html>

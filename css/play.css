@@ -1,0 +1,62 @@
+@charset "utf-8";
+.nav {
+        width: 80%;
+        height: 160px;
+        /*border: 1px solid red;*/
+        margin-left: 140px;
+        position: relative;
+        cursor: pointer;
+        /*margin-top: 15px;*/
+        overflow: hidden;
+        border: 1px solid red
+      }
+      .nav #nav-all {
+        width: auto;
+        /*height: 160px;*/
+        position: absolute;
+        left: -30px;
+      }
+      .nav .nav-i {
+        width: 194px;
+        height: 99%;
+        background: #fff;
+        border: 1px solid #d8d8d8;
+        float: left;
+        margin-left: 30px;
+      }
+      .nav .nav-img {
+        text-align: center;
+        padding-top: 50px;
+      }
+      .nav .nav-name {
+        width: 192px;
+        height: 30px;
+        background: #f2f2f2;
+        margin-top: 33px;
+        line-height: 30px;
+      }
+      .nav .nav-name a {
+        font-size: 16px;
+        font-family: '微软雅黑';
+        padding-left: 10px;
+        cursor: pointer;
+      }
+      .nav .nav-name a:hover {
+        color: #4a7abe;
+      }
+      #last {
+        position: absolute;
+        left: 0;
+        top: 20%;
+      }
+      #next {
+        position: absolute;
+        right: 0;
+        top: 20%;
+      }
+      .last-next {
+        /*display: none;*/
+         
+        cursor: pointer;
+      }/* CSS Document */
+

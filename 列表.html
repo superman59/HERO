@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HERO</title>
+<link rel="stylesheet" type="text/css" href="css/my.css">
+<link rel="stylesheet" type="text/css" href="css/aside.css" />
+<link rel="stylesheet" href="css/Batman.css" media="screen" type="text/css" />
+ <link rel="stylesheet" href="css/Batman.css" media="screen" type="text/css" />
+</head>
+<body>
+<form >
+
+<img src="pictures/timg.jpg" id="a" />
+<input type="checkbox" id="sideToggle"/>
+<aside id="aside">
+	<img src="pictures/super.jpg" id="img"><br>
+	<ul>
+    <a href="index.html"><li onmouseover="this.style.backgroundColor='#666'" onmouseout="this.style.backgroundColor='#333'">Hero</li></a>
+    <a href="#"><li onmouseover="this.style.backgroundColor='#666'" onmouseout="this.style.backgroundColor='#333'">About</li></a>
+    <a href="公司.html"><li onmouseover="this.style.backgroundColor='#666'" onmouseout="this.style.backgroundColor='#333'">Comics</li></a> 
+    <a href="列表.html"><li onmouseover="this.style.backgroundColor='#666'" onmouseout="this.style.backgroundColor='#333'">Company</li></a>	
+    
+    	
+    </ul>
+</aside>
+<div id="wrap">
+	<label id="sideMenuControl" for="sideToggle">
+        <canvas id="canvas" width="100%" height="100"></canvas>
+        <script>
+            var canvas = document.querySelector("#canvas"), image = new Image();
+            var context = canvas.getContext("2d");
+    
+            image.onload = function() 
+            {
+                var pattern = context.createPattern(image, "no-repeat");
+                context.arc(50, 50, 50, 0, 2 * Math.PI);
+                context.fillStyle = pattern;
+                context.fill();    
+            };
+            image.src = "pictures/super1.jpg";
+        </script>
+	</label>
+</div>
+
+<div style="margin-left:15%; margin-right:15%; float:left;">
+	<div id="div1">
+			<div align="center">
+            	<div style="background-color:#666">
+                	<input type="button" id="button1" onclick="button()" value="Click it up ▼" />
+                </div>
+                	
+				<h1 style="color:#FFF">HERO</h1>
+                <h2 class="bevel">这个世界需要英雄</h2>
+                <table id="table" style="border-radius:10px 10px 10px 10px;">
+                	<tr>
+                    	<th><h5>email:</h5><th>
+                    	<th><input type="email" id="password"></th>
+                     </tr>
+                    <tr>
+                    	<th><h5>password:</h5><th>
+                    	<th><input type="password" name="pw" id="pw1" required oninvalid="setCustomValidity('请输入密码')" oninput=" setCustomValidity('');">
+                        </th>
+                    <tr>
+                    	<th height="10"><h5>again:<h5><th>
+                    	<th><input type="password" required oninvalid="setCustomValidity('请输入密码')" oninput="setCustomValidity('')"name="pw" id="pw2" onkeyup="validate()"/>
+                        <span id="tishi"></span></th>
+                    </tr>
+				<script>
+               
+                </script>
+                </table>
+				<input type="submit" id="submit" value="Registration/Login">
+                <script>
+				 function validate() {
+                	var pw1 = document.getElemen.tById("pw1").value;
+               	 	var pw2 = document.getElementById("pw2").value;
+                	if(pw1 == pw2) {
+               	 	document.getElementById("tishi").innerHTML="<font color='green'>√</font>";
+                	document.getElementById("submit").disabled = false;
+                }
+                else {
+                document.getElementById("tishi").innerHTML="<font color='red'>密码不相同</font>";
+                document.getElementById("submit").disabled = true;
+                }
+                }
+					document.forms[0].target="if";
+					function button()
+					{
+						document.forms[0].target="if";
+						var x=document.getElementById("div1");
+						x.id="div1-1";
+						var y = document.getElementById("last");
+						y.id="last-1";
+					}
+					
+				</script>
+		</div>
+  </div>
+  </form>
+  <iframe id="if" name="if" src="about:blank" style="display:none"></iframe>
+	<div id="last">
+    	<div id="last1">
+        	<div id="last2">
+           <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=3&id=12012121&auto=1&height=66"></iframe>
+           </div>
+           <br><br><br><br>
+           <div class="biao">
+           	<br />
+           	<HR style="FILTER: alpha(opacity=0,finishopacity=100,style=1)" width="100%" color=#fff SIZE=3>
+           	<h2 style="color:#C60; float:left">DC Comics 漫画列表</h2>
+           	<h3 style="float:right">人气排序 ▏更新时间排序&nbsp;&nbsp;</h3>
+          	 <HR style="FILTER: alpha(opacity=0,finishopacity=100,style=1)" width="100%" color=#fff SIZE=3>
+           		<div class="pic">
+            		<a href="漫画.html"><img src="pictures/img1.jpg" class="pic-img" /><br />
+            		superman</a>
+            	</div>
+                <div class="pic">
+            		<a href=""><img src="pictures/img2.jpg" class="pic-img" /></a><br />
+            		<a href="">superman</a>
+            	</div>
+                <div class="pic">
+            		<a href=""><img src="pictures/img3.jpg" class="pic-img" /></a><br />
+            		<a href="">superman</a>
+            	</div>
+                <div class="pic">
+            		<a href=""><img src="pictures/img4.jpg" class="pic-img" /></a><br />
+            		<a href="">superman</a>
+            	</div>
+                <div class="pic">
+            		<a href=""><img src="pictures/img5.jpg" class="pic-img" /></a><br />
+            		<a href="">superman</a>
+            	</div>
+                <div class="pic">
+            		<a href=""><img src="pictures/img6.jpg" class="pic-img" /></a><br />
+            		<a href="">superman</a>
+            	</div>
+                <div class="pic">
+            		<a href=""><img src="pictures/img7.jpg" class="pic-img" /></a><br />
+            		<a href="">superman</a>
+            	</div>
+            	<div class="pic">
+            		<a href=""><img src="pictures/img8.jpg" class="pic-img" /></a><br />
+            		<a href="">superman</a>
+            	</div>
+      <div class="clear" style="height:200px; background-color:red;"></div>
+        <div class="biao">
+           	<br />
+           	<HR style="FILTER: alpha(opacity=0,finishopacity=100,style=1)" width="100%" color=#fff SIZE=3>
+           	<h2 style="color:#C60; float:left">Marvel Comics 漫画列表</h2>
+           	<h3 style="float:right">人气排序 ▏更新时间排序&nbsp;&nbsp;</h3>
+          	 <HR style="FILTER: alpha(opacity=0,finishopacity=100,style=1)" width="100%" color=#fff SIZE=3>
+           		<div class="pic">
+            		<a href=""><img src="pictures/img11.jpg" class="pic-img" /></a><br />
+            		<a href="">superman</a>
+            	</div>
+                <div class="pic">
+            		<a href=""><img src="pictures/img12.jpg" class="pic-img" /></a><br />
+            		<a href="">superman</a>
+            	</div>
+                <div class="pic">
+            		<a href=""><img src="pictures/img13.jpg" class="pic-img" /></a><br />
+            		<a href="">superman</a>
+            	</div>
+                <div class="pic">
+            		<a href=""><img src="pictures/img14.jpg" class="pic-img" /></a><br />
+            		<a href="">superman</a>
+            	</div>
+                <div class="pic">
+            		<a href=""><img src="pictures/img15.jpg" class="pic-img" /></a><br />
+            		<a href="">superman</a>
+            	</div>
+                <div class="pic">
+            		<a href=""><img src="pictures/img16.jpg" class="pic-img" /></a><br />
+            		<a href="">superman</a>
+            	</div>
+                <div class="pic">
+            		<a href=""><img src="pictures/img17.jpg" class="pic-img" /></a><br />
+            		<a href="">superman</a>
+            	</div>
+            	<div class="pic">
+            		<a href=""><img src="pictures/img18.jpg" class="pic-img" /></a><br />
+            		<a href="">superman</a>
+            	</div>
+                 <div class="clear" style="height:200px; background-color:red;"></div>
+        <div class="biao">
+           	<br />
+           	<HR style="FILTER: alpha(opacity=0,finishopacity=100,style=1)" width="100%" color=#fff SIZE=3>
+           	<h2 style="color:#C60; float:left">DC Comics 漫画列表</h2>
+           	<h3 style="float:right">人气排序 ▏更新时间排序&nbsp;&nbsp;</h3>
+          	 <HR style="FILTER: alpha(opacity=0,finishopacity=100,style=1)" width="100%" color=#fff SIZE=3>
+           		<div class="pic">
+            		<a href=""><img src="pictures/img1.jpg" class="pic-img" /></a><br />
+            		<a href="">superman</a>
+            	</div>
+                <div class="pic">
+            		<a href=""><img src="pictures/img1.jpg" class="pic-img" /></a><br />
+            		<a href="">superman</a>
+            	</div>
+                <div class="pic">
+            		<a href=""><img src="pictures/img1.jpg" class="pic-img" /></a><br />
+            		<a href="">superman</a>
+            	</div>
+                <div class="pic">
+            		<a href=""><img src="pictures/img1.jpg" class="pic-img" /></a><br />
+            		<a href="">superman</a>
+            	</div>
+                <div class="pic">
+            		<a href=""><img src="pictures/img1.jpg" class="pic-img" /></a><br />
+            		<a href="">superman</a>
+            	</div>
+                <div class="pic">
+            		<a href=""><img src="pictures/img1.jpg" class="pic-img" /></a><br />
+            		<a href="">superman</a>
+            	</div>
+                <div class="pic">
+            		<a href=""><img src="pictures/img1.jpg" class="pic-img" /></a><br />
+            		<a href="">superman</a>
+            	</div>
+            	<div class="pic">
+            		<a href=""><img src="pictures/img1.jpg" class="pic-img" /></a><br />
+            		<a href="">superman</a>
+            	</div>
+		</div>
+     </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HERO</title>
+<link rel="stylesheet" type="text/css" href="css/my.css">
+<link rel="stylesheet" type="text/css" href="css/aside.css" />
+<link rel="stylesheet" href="css/Batman.css" media="screen" type="text/css" />
+</head>
+<body>
+<input type="checkbox" id="box">
+<img src="pictures/0.jpg" id="a1">
+<div id="first">
+<label for="box">JOHN US</label>
+</div>
+<form >
+ <img src="pictures/superman_副本1.png" id="superman" />
+<img src="pictures/timg.jpg" id="a" />
+<input type="checkbox" id="sideToggle"/>
+<aside id="aside">
+	<img src="pictures/super.jpg" id="img"><br>
+	<ul id="ul" >
+    <a href="index.html"><li onmouseover="this.style.backgroundColor='#666'" onmouseout="this.style.backgroundColor='#333'">Hero</li></a>
+    <a href="#"><li onmouseover="this.style.backgroundColor='#666'" onmouseout="this.style.backgroundColor='#333'">About</li></a>
+    <a href="公司.html"><li onmouseover="this.style.backgroundColor='#666'" onmouseout="this.style.backgroundColor='#333'">Comics</li></a> 
+    <a href="列表.html"><li onmouseover="this.style.backgroundColor='#666'" onmouseout="this.style.backgroundColor='#333'">Company</li></a>	
+    </ul>
+    
+</aside>
+<div id="wrap">
+	<label id="sideMenuControl" for="sideToggle">
+        <canvas id="canvas" width="100%" height="100"></canvas>
+        <script>
+            var canvas = document.querySelector("#canvas"), image = new Image();
+            var context = canvas.getContext("2d");
+    
+            image.onload = function() 
+            {
+                var pattern = context.createPattern(image, "no-repeat");
+                context.arc(50, 50, 50, 0, 2 * Math.PI);
+                context.fillStyle = pattern;
+                context.fill();    
+            };
+            image.src = "pictures/super1.jpg";
+        </script>
+	</label>
+</div>
+
+<div style="margin-left:15%; margin-right:15%; float:left;">
+	<div id="div1">
+			<div align="center">
+            	<div style="background-color:#666">
+                	<input type="button" id="button1" onclick="button()" value="Click it up ▼" />
+                </div>
+                	
+				<h1 style="color:#FFF">HERO</h1>
+                <h2 class="bevel">这个世界需要英雄</h2>
+                <table id="table" style="border-radius:10px 10px 10px 10px;">
+                	<tr>
+                    	<th><h5>email:</h5><th>
+                    	<th><input type="email" id="password"></th>
+                     </tr>
+                    <tr>
+                    	<th><h5>password:</h5><th>
+                    	<th><input type="password" name="pw" id="pw1" required oninvalid="setCustomValidity('请输入密码')" oninput=" setCustomValidity('');">
+                        </th>
+                    <tr>
+                    	<th height="10"><h5>again:<h5><th>
+                    	<th><input type="password" required oninvalid="setCustomValidity('请输入密码')" oninput="setCustomValidity('')"name="pw" id="pw2" onkeyup="validate()"/>
+                        <span id="tishi"></span></th>
+                    </tr>
+				<script>
+               
+                </script>
+                </table>
+				<input type="submit" id="submit" value="Registration/Login">
+                <script>
+				 function validate() {
+                	var pw1 = document.getElementById("pw1").value;
+               	 	var pw2 = document.getElementById("pw2").value;
+                	if(pw1 == pw2) {
+               	 	document.getElementById("tishi").innerHTML="<font color='green'>√</font>";
+                	document.getElementById("submit").disabled = false;
+                }
+                else {
+                document.getElementById("tishi").innerHTML="<font color='red'>密码不相同</font>";
+                document.getElementById("submit").disabled = true;
+                }
+                }
+					document.forms[0].target="if";
+					function button()
+					{
+						document.forms[0].target="if";
+						var x=document.getElementById("div1");
+						x.id="div1-1";
+						var y = document.getElementById("last");
+						y.id="last-1";
+						var z = document.getElementById("superman");
+						z.id="superman-1";
+					}
+					
+				</script>
+		</div>
+  </div>
+  </form>
+  <iframe id="if" name="if" src="about:blank" style="display:none"></iframe>
+	<div id="last">
+		<div id="last1">
+        	<div id="last2">
+           <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=3&id=12012121&auto=1&height=66"></iframe>
+           </div>
+            	<div class="tip1">
+                	<p>超级英雄（Superhero）<br />是幻想的英雄角色，早期多为美国漫画所塑造，后来众多漫画英雄也被搬上了大荧幕。他们拥有超越普通人的特殊能力，做出一些不同寻常的壮举和英勇的行为，保护人民， 与恶势力搏斗。一般他们都会有                      一套能够代表其个性和超能力的华丽装。</p><br />
+                </div>
+        	<div class="tip2">
+                <h2>基本定义</h2>
+                <p>超级英雄（Superhero），是美漫中的英雄角色，通常为美国漫画公司所塑造。他们大多数拥有超越普通人的特殊能力，做出一些不同寻常的壮举和英勇的行为，保护人民，与恶势力搏斗。一般他们都会有                   一套能够代表其个性和超能力的华丽装束，和一个有着同样个性的名字。他们主要是由超人，蝙蝠侠，神奇女侠，闪电侠，绿灯侠，绿巨人，蜘蛛侠，钢铁侠和许多有超能力的英雄组成的。
+                   1938年，名为《动作漫画》的连环漫画杂志首次展示了脚蹬红靴子的超人把一辆汽车高高举过头顶的形象。到了1940年，这一连环漫画月销量达一百万册。超级英雄的时代就此揭开序幕。1956年，出版首                   个超人故事的DC漫画公司为满足公众的需求，陆续推出了蝙蝠侠、神奇女侠、绿灯侠和美国正义会社等超级英雄形象。到了20世纪60年代，惊奇漫画公司又以神奇四侠、绿巨人和复仇者崛起。一些超级英雄                    已成为过眼烟云，但那些流传至今的超级英雄还像20世纪中期那样深入民心。</p>
+        	</div>
+            <div class="clear"></div>
+            <div class="main1">
+                   <div id="animate">
+                        <ol>
+                        <li class="run time">
+                            <div class="stage">
+                                <div id="head-1"></div>
+                                <div id="head-2"></div>
+                                <div id="headear"></div>
+                                <div id="headear-radius"></div>
+                                <div id="white-square"></div>
+                                <div id="face-left"></div>
+                                <div id="face-right"></div>
+                                <div id="face"></div>
+                                <div id="brow-right"></div>
+                                <div id="eye-left"></div>
+                                <div id="eye-right"></div>
+                                <div id="brow-left"></div>
+                                <div id="back_mouse"></div>
+                                <div id="circle1"></div>
+                                <div id="circle2"></div>
+                                <div id="circle3"></div>
+                                <div id="circle4"></div>
+                                <div id="ear"></div>
+                                <div id="ear-square"></div>
+                            </div>
+                        </li>
+                        </ol>
+                    </div>
+                <div style="text-align:center;clear:both">
+                    <script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+                    <script src="/follow.js" type="text/javascript"></script>
+                </div>
+                <br><br><br><br>
+		</div>
+    </div>
+</body>
+</html>
