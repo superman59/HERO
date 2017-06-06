@@ -6,15 +6,48 @@
 <link rel="stylesheet" type="text/css" href="css/my.css">
 <link rel="stylesheet" type="text/css" href="css/aside.css" />
 <link rel="stylesheet" href="css/Batman.css" media="screen" type="text/css" />
+</style>
+  <script type = "text/javascript">
+   var typeWriter = {
+    msg: function(msg){
+     return msg;
+    },
+    len: function(){
+     return this.msg.length;
+    },
+    seq: 0,
+    speed: 150,
+    type: function(){
+     var _this = this;
+     document.getElementById("daziji").innerHTML = _this.msg.substring(0, _this.seq);
+     if (_this.seq == _this.len()) {
+      _this.seq = 0;
+       clearTimeout(t);
+     }
+     else {
+      _this.seq++;
+      var t = setTimeout(function(){_this.type()}, this.speed);
+     }
+    }
+   }
+   window.onload = function(){
+    var msg = "The greater the power, the greater the responsibility.Now that you've clicked on this page, you're qualified to be one of us, and I'll be glad to have your support in the fight against evil.<p>You either die a hero or you live long enough to see yourself become the villain .</p>";
+    function getMsg(){
+     return msg;
+    }
+    typeWriter.msg = getMsg(msg)+"|";
+    typeWriter.type();
+   }
+  </script>
 </head>
 <body>
 <input type="checkbox" id="box">
 <img src="pictures/0.jpg" id="a1">
 <div id="first">
-<label for="box">JOHN US</label>
+<label for="box" style="cursor:pointer">Click to Join</label>
 </div>
 <form >
- <img src="pictures/superman_副本1.png" id="superman" />
+ <img src="pictures/superman_副本1.webp" id="superman" />
 <img src="pictures/timg.jpg" id="a" />
 <input type="checkbox" id="sideToggle"/>
 <aside id="aside">
@@ -22,8 +55,8 @@
 	<ul id="ul" >
     <a href="index.html"><li onmouseover="this.style.backgroundColor='#666'" onmouseout="this.style.backgroundColor='#333'">Hero</li></a>
     <a href="#"><li onmouseover="this.style.backgroundColor='#666'" onmouseout="this.style.backgroundColor='#333'">About</li></a>
-    <a href="公司.html"><li onmouseover="this.style.backgroundColor='#666'" onmouseout="this.style.backgroundColor='#333'">Comics</li></a> 
-    <a href="列表.html"><li onmouseover="this.style.backgroundColor='#666'" onmouseout="this.style.backgroundColor='#333'">Company</li></a>	
+    <a href="列表.html"><li onmouseover="this.style.backgroundColor='#666'" onmouseout="this.style.backgroundColor='#333'">Comics</li></a> 
+    <a href="公司.html"><li onmouseover="this.style.backgroundColor='#666'" onmouseout="this.style.backgroundColor='#333'">Company</li></a>	
     </ul>
     
 </aside>
@@ -42,6 +75,7 @@
                 context.fill();    
             };
             image.src = "pictures/super1.jpg";
+			canvas.style.cursor="pointer";
         </script>
 	</label>
 </div>
@@ -83,7 +117,7 @@
                 	document.getElementById("submit").disabled = false;
                 }
                 else {
-                document.getElementById("tishi").innerHTML="<font color='red'>密码不相同</font>";
+                document.getElementById("tishi").innerHTML="<font color='red'><br>密码不相同</font>";
                 document.getElementById("submit").disabled = true;
                 }
                 }
@@ -109,16 +143,21 @@
         	<div id="last2">
            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=3&id=12012121&auto=1&height=66"></iframe>
            </div>
+           <div class="tip" >
             	<div class="tip1">
                 	<p>超级英雄（Superhero）<br />是幻想的英雄角色，早期多为美国漫画所塑造，后来众多漫画英雄也被搬上了大荧幕。他们拥有超越普通人的特殊能力，做出一些不同寻常的壮举和英勇的行为，保护人民， 与恶势力搏斗。一般他们都会有                      一套能够代表其个性和超能力的华丽装。</p><br />
                 </div>
-        	<div class="tip2">
-                <h2>基本定义</h2>
+        		<div class="tip2">
+                	<h2>基本定义</h2>
                 <p>超级英雄（Superhero），是美漫中的英雄角色，通常为美国漫画公司所塑造。他们大多数拥有超越普通人的特殊能力，做出一些不同寻常的壮举和英勇的行为，保护人民，与恶势力搏斗。一般他们都会有                   一套能够代表其个性和超能力的华丽装束，和一个有着同样个性的名字。他们主要是由超人，蝙蝠侠，神奇女侠，闪电侠，绿灯侠，绿巨人，蜘蛛侠，钢铁侠和许多有超能力的英雄组成的。
-                   1938年，名为《动作漫画》的连环漫画杂志首次展示了脚蹬红靴子的超人把一辆汽车高高举过头顶的形象。到了1940年，这一连环漫画月销量达一百万册。超级英雄的时代就此揭开序幕。1956年，出版首                   个超人故事的DC漫画公司为满足公众的需求，陆续推出了蝙蝠侠、神奇女侠、绿灯侠和美国正义会社等超级英雄形象。到了20世纪60年代，惊奇漫画公司又以神奇四侠、绿巨人和复仇者崛起。一些超级英雄                    已成为过眼烟云，但那些流传至今的超级英雄还像20世纪中期那样深入民心。</p>
-        	</div>
+                   1938年，名为《动作漫画》的连环漫画杂志首次展示了脚蹬红靴子的超人把一辆汽车高高举过头顶的形象。到了1940年，这一连环漫画月销量达一百万册。超级英雄的时代就此揭开序幕。1956年，出版首                   个超人故事的DC漫画公司为满足公众的需求，陆续推出了蝙蝠侠、神奇女侠、绿灯侠和美国正义会社等超级英雄形象。到了20世纪60年代，惊奇漫画公司又以神奇四侠、绿巨人和复仇者崛起。一些超级英雄	成为过眼烟云，但那些流传至今的		                   超级英雄还像20世纪中期那样深入民心。</p>
+        		</div>
+            </div>
             <div class="clear"></div>
             <div class="main1">
+            	<div class="main1-1">
+                	<h1>welcome</h1> <div id="daziji" ></div>		
+                </div>  
                    <div id="animate">
                         <ol>
                         <li class="run time">

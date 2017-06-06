@@ -15,6 +15,7 @@
 	position:fixed;
 }
 #wrap{
+	cursor:pointer;
 	padding-left:120px;
 	margin-top:20%;
 	float: left;
