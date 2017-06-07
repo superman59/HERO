@@ -18,7 +18,7 @@ https://superman59.github.io/HERO/%E6%BC%AB%E7%94%BB.html
 分别为本站点的首页、补充页、列表页与详细页。本站点的表单部分已包含于各个页面之中，不单独列出。
 
 ## 技术指标
-本站点兼容IE-9以上版本，360 ，Chrome等主流浏览器.
+本站点兼容IE-9以上版本，360 ，Chrome等主流浏览器(不兼容火狐）.
 此次站点开发使用HTML5，css3，开发工具为[Adobe Dreamweaver](http://www.adobe.com/cn/products/dreamweaver.html)，以下为浏览器兼容性，
 | 浏览器        | 版本   |  兼容性  |
 | --------   | -----:  | :----:  |
