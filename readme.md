@@ -60,8 +60,8 @@ https://superman59.github.io/HERO/%E6%BC%AB%E7%94%BB.html
             {
                 var pattern = context.createPattern(image, "no-repeat");
                 context.arc(50, 50, 50, 0, 2 * Math.PI);
-                context.fillStyle = pattern;
-                context.fill();    
+                context.fillStyle = pattern;
+                context.fill();    
             };
             image.src = "pictures/super1.jpg";
         </script>
@@ -83,5 +83,5 @@ function button()
 ```
 
 
-
+本次站点制作让我对web前端开发的各种工作有了一个更清晰的了解及认识，对于自身在js方面的不在有了更深刻的体会。
 
